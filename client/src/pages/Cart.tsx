@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -10,7 +9,7 @@ import { products } from '@/data/products';
 
 export default function Cart() {
   const { items, updateQuantity, removeItem } = useCart();
-  const [isProcessing, setIsProcessing] = useState(false);
+  const [, setLocation] = useLocation();
 
   const cartProducts = items.map(item => ({
     ...products.find(p => p.id === item.productId)!,
@@ -22,11 +21,8 @@ export default function Cart() {
   const total = subtotal + shipping;
 
   const handleCheckout = () => {
-    setIsProcessing(true);
     console.log('Proceeding to checkout with items:', items);
-    setTimeout(() => {
-      window.location.href = '/checkout';
-    }, 500);
+    setLocation('/checkout');
   };
 
   if (items.length === 0) {
@@ -160,10 +156,9 @@ export default function Cart() {
                     className="w-full"
                     size="lg"
                     onClick={handleCheckout}
-                    disabled={isProcessing}
                     data-testid="button-checkout"
                   >
-                    {isProcessing ? 'Processing...' : 'Proceed to Checkout'}
+                    Proceed to Checkout
                   </Button>
                   <Link href="/" data-testid="link-continue-shopping">
                     <Button variant="outline" className="w-full" data-testid="button-continue-shopping">

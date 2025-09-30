@@ -57,11 +57,11 @@ export default function ProductDetail() {
           </Link>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
+            <div className="bg-white rounded-lg p-8">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full rounded-lg"
+                className="w-full h-auto object-contain"
                 data-testid="img-product-detail"
               />
             </div>

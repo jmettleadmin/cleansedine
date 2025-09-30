@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="text-xl font-heading font-bold">BioPets</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Premium pet nutrition and wellness products for your furry family members.
+              Premium pet grooming, oral care, and disinfectant products for your furry family members.
             </p>
           </div>
 
@@ -39,10 +39,22 @@ export default function Footer() {
 
           <div>
             <h4 className="font-heading font-semibold mb-4">Support</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Shipping & Returns</li>
-              <li>FAQs</li>
-              <li>Privacy Policy</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/shipping-returns" data-testid="link-footer-shipping">
+                  <span className="text-muted-foreground hover:text-foreground cursor-pointer">Shipping & Returns</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/faqs" data-testid="link-footer-faqs">
+                  <span className="text-muted-foreground hover:text-foreground cursor-pointer">FAQs</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy" data-testid="link-footer-privacy">
+                  <span className="text-muted-foreground hover:text-foreground cursor-pointer">Privacy Policy</span>
+                </Link>
+              </li>
             </ul>
           </div>
 

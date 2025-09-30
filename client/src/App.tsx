@@ -11,6 +11,9 @@ import Cart from "@/pages/Cart";
 import Checkout from "@/pages/Checkout";
 import Success from "@/pages/Success";
 import ProductDetail from "@/pages/ProductDetail";
+import ShippingReturns from "@/pages/ShippingReturns";
+import FAQs from "@/pages/FAQs";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -23,6 +26,9 @@ function Router() {
       <Route path="/checkout" component={Checkout} />
       <Route path="/success" component={Success} />
       <Route path="/product/:id" component={ProductDetail} />
+      <Route path="/shipping-returns" component={ShippingReturns} />
+      <Route path="/faqs" component={FAQs} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );

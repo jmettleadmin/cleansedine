@@ -1,8 +1,9 @@
 import { Link } from 'wouter';
-import { ShoppingCart, Heart } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { useCart } from '@/lib/cart-context';
+import biopetsLogo from '@assets/biopets_1759242438700.png';
 
 export default function Header() {
   const { itemCount } = useCart();
@@ -12,8 +13,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-6">
         <Link href="/" data-testid="link-home">
           <div className="flex items-center gap-2 cursor-pointer">
-            <Heart className="h-8 w-8 text-primary fill-primary" />
-            <span className="text-2xl font-heading font-bold text-foreground">BioPets</span>
+            <img src={biopetsLogo} alt="BioPets Logo" className="h-16" />
           </div>
         </Link>
 

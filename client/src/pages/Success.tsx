@@ -12,7 +12,7 @@ export default function Success() {
 
   useEffect(() => {
     clearCart();
-  }, [clearCart]);
+  }, []);
 
   const orderNumber = `BP${Date.now().toString().slice(-8)}`;
 

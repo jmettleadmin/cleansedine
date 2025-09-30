@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
-import aboutImage from '@assets/generated_images/BioPets_team_and_quality_care_5c0fdf23.png';
+import aboutImage from '@assets/biopets_1759242906401.png';
 
 export default function About() {
   return (
@@ -15,14 +15,14 @@ export default function About() {
                 About BioPets
               </h1>
               <p className="text-xl text-muted-foreground text-center mb-12" data-testid="text-about-subtitle">
-                Dedicated to the health and happiness of your furry family members
+                Vet-Approved, Pet Adored. Care you can count on.
               </p>
 
-              <div className="mb-12">
+              <div className="mb-12 bg-white rounded-lg p-8">
                 <img
                   src={aboutImage}
-                  alt="BioPets team and facilities"
-                  className="w-full rounded-lg shadow-lg"
+                  alt="BioPets - Veterinary care products"
+                  className="w-full max-w-2xl mx-auto"
                   data-testid="img-about-team"
                 />
               </div>
@@ -34,9 +34,9 @@ export default function About() {
                       Our Mission
                     </h2>
                     <p className="text-muted-foreground leading-relaxed" data-testid="text-about-mission-content">
-                      At BioPets, we believe that pets are family. Our mission is to provide the highest quality,
-                      natural nutrition and wellness products that help your pets live longer, healthier, and happier lives.
-                      Every product is carefully formulated with premium ingredients and approved by licensed veterinarians.
+                      At BioPets, we believe that pets deserve the best veterinary care products. Our mission is to provide 
+                      professional-grade disinfectants, grooming solutions, and oral care products that keep your pets healthy, 
+                      clean, and protected. Every product is veterinarian-approved and formulated with effective, pet-safe ingredients.
                     </p>
                   </CardContent>
                 </Card>
@@ -47,16 +47,16 @@ export default function About() {
                       Our Commitment to Quality
                     </h2>
                     <p className="text-muted-foreground leading-relaxed mb-4" data-testid="text-about-quality-content">
-                      We source only the finest natural and organic ingredients from trusted suppliers. Each batch
-                      undergoes rigorous testing to ensure purity, potency, and safety. Our state-of-the-art facility
-                      follows strict manufacturing standards to deliver products you can trust.
+                      BioPets products are formulated with pharmaceutical-grade active ingredients like Chlorhexidine Gluconate 
+                      and Ketoconazole. Each product undergoes strict quality control to ensure effectiveness and safety for your 
+                      beloved pets. Our antiseptic and disinfectant solutions are trusted by veterinarians and pet owners alike.
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                      <li>100% natural and organic ingredients</li>
-                      <li>Veterinarian formulated and approved</li>
-                      <li>Third-party tested for quality and safety</li>
-                      <li>Made in GMP-certified facilities</li>
-                      <li>No artificial colors, flavors, or preservatives</li>
+                      <li>Veterinarian-approved formulations</li>
+                      <li>Pharmaceutical-grade active ingredients</li>
+                      <li>Effective against bacteria, fungi, and parasites</li>
+                      <li>Safe for pets when used as directed</li>
+                      <li>Alcohol-free, skin-friendly options available</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -67,10 +67,11 @@ export default function About() {
                       Our Story
                     </h2>
                     <p className="text-muted-foreground leading-relaxed" data-testid="text-about-story-content">
-                      BioPets was founded by a team of pet lovers who were frustrated by the lack of truly natural,
-                      high-quality pet nutrition options in the Philippines. After years of research and collaboration
-                      with veterinarians and pet nutritionists, we created a line of products that we're proud to give
-                      to our own pets. Today, we're honored to serve thousands of pet families across the country.
+                      BioPets was founded to bridge the gap between professional veterinary care and everyday pet maintenance. 
+                      Working closely with veterinarians and pet care specialists in the Philippines, we developed a comprehensive 
+                      line of disinfectants, medicated shampoos, and oral care solutions. From our Cleansedine antiseptic products 
+                      to our Fur-tastic medicated shampoo and Purepet multi-surface disinfectant, each product is designed to provide 
+                      veterinary-grade care that pet owners can trust and afford.
                     </p>
                   </CardContent>
                 </Card>
